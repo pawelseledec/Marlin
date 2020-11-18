@@ -44,7 +44,7 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_MEDIA_INSERTED                  = _UxGT("Karta włożona");
   PROGMEM Language_Str MSG_MEDIA_REMOVED                   = _UxGT("Karta usunięta");
   PROGMEM Language_Str MSG_MEDIA_WAITING                   = _UxGT("Oczekiwanie na kartę");
-  PROGMEM Language_Str MSG_MEDIA_READ_ERROR                = _UxGT("Bład odczytu karty");
+  PROGMEM Language_Str MSG_MEDIA_READ_ERROR                = _UxGT("Błąd odczytu karty");
   PROGMEM Language_Str MSG_MEDIA_USB_REMOVED               = _UxGT("Urządzenie USB usunięte");
   PROGMEM Language_Str MSG_MEDIA_USB_FAILED                = _UxGT("Błąd uruchomienia USB");
   PROGMEM Language_Str MSG_LCD_ENDSTOPS                    = _UxGT("Krańców."); // Max length 8 characters
@@ -99,8 +99,8 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_SPINDLE_REVERSE                 = _UxGT("Rewers wrzeciona");
   PROGMEM Language_Str MSG_SWITCH_PS_ON                    = _UxGT("Włącz zasilacz");
   PROGMEM Language_Str MSG_SWITCH_PS_OFF                   = _UxGT("Wyłącz zasilacz");
-  PROGMEM Language_Str MSG_EXTRUDE                         = _UxGT("Ekstruzja");
-  PROGMEM Language_Str MSG_RETRACT                         = _UxGT("Wycofanie");
+  PROGMEM Language_Str MSG_EXTRUDE                         = _UxGT("Wysuń");
+  PROGMEM Language_Str MSG_RETRACT                         = _UxGT("Wycofaj");
   PROGMEM Language_Str MSG_MOVE_AXIS                       = _UxGT("Ruch osi");
   PROGMEM Language_Str MSG_BED_LEVELING                    = _UxGT("Poziomowanie stołu");
   PROGMEM Language_Str MSG_LEVEL_BED                       = _UxGT("Wypoziomuj stół");
@@ -128,7 +128,7 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_HOTEND_OFFSET_Z                 = _UxGT("2ga dysza Z");
   PROGMEM Language_Str MSG_UBL_DOING_G29                   = _UxGT("Wykonywanie G29");
   PROGMEM Language_Str MSG_UBL_TOOLS                       = _UxGT("Narzędzia UBL");
-  PROGMEM Language_Str MSG_UBL_LEVEL_BED                   = _UxGT("Unified Bed Leveling");
+  PROGMEM Language_Str MSG_UBL_LEVEL_BED                   = _UxGT("Ogólne poziomowanie stołu");
   PROGMEM Language_Str MSG_LCD_TILTING_MESH                = _UxGT("Punkt pochylenia");
   PROGMEM Language_Str MSG_UBL_MANUAL_MESH                 = _UxGT("Ręczne Budowanie Siatki");
   PROGMEM Language_Str MSG_UBL_BC_INSERT                   = _UxGT("Umieść podkładkę i zmierz");
@@ -191,7 +191,7 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_MESH_SAVED                      = _UxGT("Siatka %i zapisana");
   PROGMEM Language_Str MSG_UBL_NO_STORAGE                  = _UxGT("Brak magazynu");
   PROGMEM Language_Str MSG_UBL_SAVE_ERROR                  = _UxGT("Błąd: Zapis UBL");
-  PROGMEM Language_Str MSG_UBL_RESTORE_ERROR               = _UxGT("Bład: Odczyt UBL");
+  PROGMEM Language_Str MSG_UBL_RESTORE_ERROR               = _UxGT("Błąd: Odczyt UBL");
   PROGMEM Language_Str MSG_UBL_Z_OFFSET                    = _UxGT("Przesunięcie Z: ");
   PROGMEM Language_Str MSG_UBL_Z_OFFSET_STOPPED            = _UxGT("Przesunięcie Z zatrzymane");
   PROGMEM Language_Str MSG_UBL_STEP_BY_STEP_MENU           = _UxGT("UBL Krok po kroku");
@@ -418,7 +418,7 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_3POINT_LEVELING                 = _UxGT("Poziomowanie 3-punktowe");
   PROGMEM Language_Str MSG_LINEAR_LEVELING                 = _UxGT("Poziomowanie liniowe");
   PROGMEM Language_Str MSG_BILINEAR_LEVELING               = _UxGT("Poziomowanie biliniowe");
-  PROGMEM Language_Str MSG_UBL_LEVELING                    = _UxGT("Unified Bed Leveling");
+  PROGMEM Language_Str MSG_UBL_LEVELING                    = _UxGT("Ogólne poziomowanie stołu");
   PROGMEM Language_Str MSG_MESH_LEVELING                   = _UxGT("Poziomowanie siatką");
   PROGMEM Language_Str MSG_INFO_STATS_MENU                 = _UxGT("Statystyki");
   PROGMEM Language_Str MSG_INFO_BOARD_MENU                 = _UxGT("Info płyty");
@@ -496,7 +496,7 @@ namespace Language_pl {
   PROGMEM Language_Str MSG_MIXER                           = _UxGT("Mikser");
   PROGMEM Language_Str MSG_GRADIENT                        = _UxGT("Gradient");
   PROGMEM Language_Str MSG_FULL_GRADIENT                   = _UxGT("Pełny gradient");
-  PROGMEM Language_Str MSG_TOGGLE_MIX                      = _UxGT("Przełacz miks");
+  PROGMEM Language_Str MSG_TOGGLE_MIX                      = _UxGT("Przełącz miks");
   PROGMEM Language_Str MSG_CYCLE_MIX                       = _UxGT("Cycle Mix");
   PROGMEM Language_Str MSG_GRADIENT_MIX                    = _UxGT("Gradient Mix");
   PROGMEM Language_Str MSG_REVERSE_GRADIENT                = _UxGT("Odwrotny gradient");
@@ -506,7 +506,7 @@ namespace Language_pl {
   //                        ...or up to 2 lines on a 3-line display
   //
   #if LCD_HEIGHT >= 4
-    PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_2_LINE("Nacisnik przycisk", "by wznowić drukowanie"));
+    PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_2_LINE("Naciśnij przycisk", "by wznowić drukowanie"));
     PROGMEM Language_Str MSG_PAUSE_PRINT_PARKING           = _UxGT(MSG_1_LINE("Parkowanie..."));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INIT          = _UxGT(MSG_3_LINE("Czekam na", "zmianę filamentu", "by wystartować"));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INSERT        = _UxGT(MSG_3_LINE("Włóż filament", "i naciśnij przycisk", "by kontynuować"));
